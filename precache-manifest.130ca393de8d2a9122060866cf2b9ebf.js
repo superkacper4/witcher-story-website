@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3582145746b8cf94cfabb33eee9cdaa0",
+    "revision": "30f16a13fd591f652fbce95952d18fad",
     "url": "/witcher-story-website/index.html"
   },
   {
-    "revision": "fbdd40fe5151f83e090d",
-    "url": "/witcher-story-website/static/css/main.53693439.chunk.css"
+    "revision": "7c5d0c770acbbc706e79",
+    "url": "/witcher-story-website/static/css/main.bac4c190.chunk.css"
   },
   {
     "revision": "c4abdf92eb34ffd1acd8",
     "url": "/witcher-story-website/static/js/2.3c01b6c8.chunk.js"
   },
   {
-    "revision": "fbdd40fe5151f83e090d",
-    "url": "/witcher-story-website/static/js/main.a3ee41e1.chunk.js"
+    "revision": "7c5d0c770acbbc706e79",
+    "url": "/witcher-story-website/static/js/main.f7bb6583.chunk.js"
   },
   {
     "revision": "f0aab4718daa26c75f86",

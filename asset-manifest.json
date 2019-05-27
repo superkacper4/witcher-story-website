@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/witcher-story-website/static/css/main.53693439.chunk.css",
+    "main.js": "/witcher-story-website/static/js/main.a3ee41e1.chunk.js",
+    "main.js.map": "/witcher-story-website/static/js/main.a3ee41e1.chunk.js.map",
+    "runtime~main.js": "/witcher-story-website/static/js/runtime~main.562f6c93.js",
+    "runtime~main.js.map": "/witcher-story-website/static/js/runtime~main.562f6c93.js.map",
+    "static/js/2.3c01b6c8.chunk.js": "/witcher-story-website/static/js/2.3c01b6c8.chunk.js",
+    "static/js/2.3c01b6c8.chunk.js.map": "/witcher-story-website/static/js/2.3c01b6c8.chunk.js.map",
+    "index.html": "/witcher-story-website/index.html",
+    "precache-manifest.c6ac8ad1b69d2dde9173bcc0708fbd99.js": "/witcher-story-website/precache-manifest.c6ac8ad1b69d2dde9173bcc0708fbd99.js",
+    "service-worker.js": "/witcher-story-website/service-worker.js",
+    "static/css/main.53693439.chunk.css.map": "/witcher-story-website/static/css/main.53693439.chunk.css.map",
+    "static/media/dandelion2.png": "/witcher-story-website/static/media/dandelion2.1f1cae30.png",
+    "static/media/FirstPage.module.scss": "/witcher-story-website/static/media/dandelion2.7410efc9.jpg",
+    "static/media/DandelionIcon.module.scss": "/witcher-story-website/static/media/dandelionIcon.75b9f03c.png",
+    "static/media/ThirdPage.module.scss": "/witcher-story-website/static/media/kaermorhen.a31ebaf1.jpg",
+    "static/media/title.jpg": "/witcher-story-website/static/media/title.96413ba6.jpg",
+    "static/media/SecondPage.module.scss": "/witcher-story-website/static/media/witcher.e67f8396.gif",
+    "static/media/FourthPage.module.scss": "/witcher-story-website/static/media/witcher1.7779bb5a.gif",
+    "static/media/witcherInfo.jpg": "/witcher-story-website/static/media/witcherInfo.a40522fd.jpg",
+    "static/media/witcherinfo1.jpg": "/witcher-story-website/static/media/witcherinfo1.55bcc08c.jpg"
+  }
+}

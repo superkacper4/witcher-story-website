@@ -1,122 +1,109 @@
-.wrapper{
-    // background-color: rgb(155, 111, 111);
-    background-image: radial-gradient(rgb(155, 111, 111),#444);
-    font-size: 4rem;
-    list-style-type: none;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.wrapper {
+  background-image: radial-gradient(rgb(155, 111, 111), #444);
+  font-size: 4rem;
+  list-style-type: none;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 1s;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 3;
+
+  li:nth-of-type(1) {
+    padding-right: 30px;
+  }
+
+  li:nth-of-type(2) {
+    padding-left: 30px;
+    border-left: 2px solid #fff;
+  }
+
+  .navItemLink {
+    text-decoration: none;
+    transition: 0.5s;
     color: #fff;
-    transition: 1s;
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    z-index: 3;
+    font-weight: 600;
+  }
 
-    li:nth-of-type(1){
-        padding-right: 30px;
-    }
-
-    li:nth-of-type(2){
-        padding-left: 30px;
-        border-left: 2px solid #fff;
-    }
-
-    .navItemLink{
-        text-decoration: none;
-        transition: .5s;
-        color: #fff;
-        font-weight: 600;
-    }
-
-    .navItemLinkActive{
-        color: rgb(0, 0, 0);
-    }
-
-
+  .navItemLinkActive {
+    color: rgb(0, 0, 0);
+  }
 }
 
-.NavActive{
-    @extend .wrapper;
-    top:0;
+.NavActive {
+  @extend .wrapper;
+  top: 0;
 }
 
+.NavIcon {
+  height: 32px;
+  width: 30px;
+  position: fixed;
+  right: 5vw;
+  top: 5vh;
+  z-index: 4;
+  background: transparent;
+  border: none;
+  display: block;
 
-.NavIcon{
-    height: 32px;
-    width: 30px;
-    position: fixed;
-    right: 5vw;
-    top: 5vh;
-    z-index: 4;
-    background: transparent;
-    border: none;
-    display: block;
-    // background-color: red;
-
-
-    &:hover .Hamburger::before, &:hover .Hamburger::after{
-        transform: none;
-    }
+  &:hover .Hamburger::before,
+  &:hover .Hamburger::after {
+    transform: none;
+  }
 }
-.Hamburger{
+.Hamburger {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+
+  &::before {
+    content: "";
     position: absolute;
     width: 30px;
     height: 4px;
     background-color: #fff;
+    top: -8px;
     left: 50%;
     transform: translateX(-50%);
-    transition: .5s;
+    transition: 0.5s;
+  }
 
-    &::before{
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 4px;
-        background-color: #fff;
-        top: -8px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: .5s;
-    }
-
-    &::after{
-        content: "";
-        top: 8px;
-        position: absolute;
-        width: 30px;
-        height: 4px;
-        background-color: #fff;
-        top: 8px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: .5s;
-    }
-
-    // &:hover::before{
-    //     transform: none;
-    // }
+  &::after {
+    content: "";
+    top: 8px;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
 }
 
-.HamburgerActive{
-    @extend .Hamburger;
-    background-color: #ec5858;
+.HamburgerActive {
+  @extend .Hamburger;
+  background-color: #ec5858;
 
-    &::before{
-        @extend .Hamburger::before;
-        transform: translateX(-50%) translateY(8px) rotate(45deg);
-        background-color: #fff;
-    }
+  &::before {
+    @extend .Hamburger::before;
+    transform: translateX(-50%) translateY(8px) rotate(45deg);
+    background-color: #fff;
+  }
 
-    &::after{
-        @extend .Hamburger::after;
-        background-color: rgb(255, 255, 255);
-        transform: translateX(-50%) translateY(-8px) rotate(-45deg);
-    }}
-// @keyframes navAnimation{
-//     0%{
-
-//     }
-// }
+  &::after {
+    @extend .Hamburger::after;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-50%) translateY(-8px) rotate(-45deg);
+  }
+}

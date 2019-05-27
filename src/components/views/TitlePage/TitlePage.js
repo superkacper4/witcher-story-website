@@ -34,9 +34,7 @@ class TitlePage extends React.Component {
           <h2>Short story about Witchers, written by fan</h2>
         </header>
 
-        <ScrollArrow
-        // ScrollPage = {this.div}
-        />
+        <ScrollArrow />
       </div>
     );
   }

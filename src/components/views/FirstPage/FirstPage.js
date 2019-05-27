@@ -4,19 +4,8 @@ import Dandelion from "./img/dandelion2.png";
 import DandelionIconWrapper from "../../DandelionIcon/DandelionIconWrapper";
 import ScrollArrow from "../../ScrollArrow/ScrollArrow";
 import ScrollArrowReverse from "../../ScrollArrow/ScrollArrowReverse";
-// let x = 0;
-// let y = 0;
 
 class FirstPage extends React.Component {
-  onMouseMove = e => {
-    // x=e.clientX/80;
-    // y=e.clientY/80;
-    // this.div.current.style.top = -x + "px";
-    // this.div.current.style.left = -y + "px";
-    // console.log(x)
-    // console.log(y)
-  };
-
   handleScroll = () => {
     const scrollY = window.scrollY;
     if (

@@ -8,26 +8,15 @@ import AnotherPage from "./components/views/AnotherPage/AnotherPage";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <>
           <Nav />
-          {/* <StoryPage/> */}
           <Switch>
             <Route exact path="/" component={StoryPage} />
             <Route path="/AnotherPage" component={AnotherPage} />
           </Switch>
         </>
       </BrowserRouter>
-      // <div>
-
-      //   <Nav/>
-      //   <TitlePage/>
-      //   <FirstPage/>
-      //   <SecondPage/>
-      //   <ThirdPage/>
-      //   <FourthPage/>
-
-      // </div>
     );
   }
 }

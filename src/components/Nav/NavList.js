@@ -4,8 +4,6 @@ import styles from "./Nav.module.scss";
 
 const NavList = ({ cssClass, navItemClickFn }) => (
   <ul className={cssClass}>
-    {/* <NavLink exact
-            >twitters</NavLink> */}
     <li>
       <NavLink
         exact
@@ -28,13 +26,6 @@ const NavList = ({ cssClass, navItemClickFn }) => (
         Another
       </NavLink>
     </li>
-
-    {/* <NavItem
-            item = {"About"}
-        />
-        <NavItem
-            item = {"Kontakt"}
-        /> */}
   </ul>
 );
 export default NavList;

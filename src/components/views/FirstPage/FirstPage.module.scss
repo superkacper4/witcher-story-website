@@ -1,71 +1,48 @@
-.wrapper{
-    height: 100vh;
-    background: url("./img/dandelion2.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    font-size: 2rem;
-    position: relative;
+.wrapper {
+  height: 100vh;
+  background: url("./img/dandelion2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+  transition: 1s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(21, 39, 73);
+    opacity: 0.6;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.75rem;
+  }
+
+  .text {
+    position: absolute;
+    text-align: justify;
+    width: 40%;
+    top: 30%;
+    left: 10%;
+    padding: 20px;
+    opacity: 0;
     transition: 1s;
-
-    &::before{
-        content: "";
-        position: absolute;
-        top:0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: rgb(21, 39, 73);
-        // background-image: radial-gradient(rgb(133, 39, 39), rgb(32, 58, 107));;
-        opacity: .6;
-    }
-
-    h2{
-        font-size: 3.5rem;
-        text-align: center;
-        padding-bottom: 10px;
-        // opacity: 0;
-        // transition: 1s;
-    }
-
-    p{
-        font-size: 1.75rem;
-        // opacity: 0;
-        // transition: 1s;
-    }
-
-    .text{
-        position: absolute;
-        text-align: justify;
-        width:40%;
-        // height: 30vh;
-        top:30%;
-        left: 10%;
-        // background-color: #002f4b9a;
-        padding: 20px;
-        // background-color: #dc4325a6;
-        // transform: translate(-50%,-50%);
-        opacity: 0;
-        transition: 1s;
-    }
+  }
 }
 
-.active{
-     @extend .wrapper;
-     .text{
-         opacity: 1;
-     }
-
-    // h2{
-    //     @extend h2;
-    //     opacity: 1;
-    // }
-
-    // p{
-    //     opacity: 1;
-    // }
-
-    // .text{
-    //     @extend .text;
-    //     opacity: 1;
-    // }
+.active {
+  @extend .wrapper;
+  .text {
+    opacity: 1;
+  }
 }

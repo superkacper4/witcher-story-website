@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Nav from './components/Nav/Nav';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './index.css'
-import StoryPage from './components/views/StoryPage/StoryPage';
-import ContactPage from './components/views/ContactPage/ContactPage';
+import React, { Component } from "react";
+import Nav from "./components/Nav/Nav";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./index.css";
+import StoryPage from "./components/views/StoryPage/StoryPage";
+import AnotherPage from "./components/views/AnotherPage/AnotherPage";
 
 class App extends Component {
   render() {
@@ -11,10 +11,10 @@ class App extends Component {
       <BrowserRouter>
         <>
           <Nav />
-            {/* <StoryPage/> */}
+          {/* <StoryPage/> */}
           <Switch>
             <Route exact path="/" component={StoryPage} />
-            <Route path="/ContactPage" component={ContactPage} />
+            <Route path="/AnotherPage" component={AnotherPage} />
           </Switch>
         </>
       </BrowserRouter>

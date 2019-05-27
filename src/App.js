@@ -13,11 +13,8 @@ class App extends Component {
           <Nav />
           {/* <StoryPage/> */}
           <Switch>
-            <Route exact path="/witcher-story-website" component={StoryPage} />
-            <Route
-              path="/witcher-story-website/AnotherPage"
-              component={AnotherPage}
-            />
+            <Route exact path="/" component={StoryPage} />
+            <Route path="/AnotherPage" component={AnotherPage} />
           </Switch>
         </>
       </BrowserRouter>

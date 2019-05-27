@@ -1,0 +1,44 @@
+.wrapper{
+    background-color: rgb(73, 73, 73);
+    width: 100vw;
+    height: 140px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size:2rem;
+    position: relative;
+
+    h4{
+        margin-top:15px;
+    }
+
+
+}
+
+.arrow{
+    // position: absolute;
+    z-index: 5;
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    // top: 50%;
+    // left: 20%;
+    // transform: translateY(-50%) rotate(180deg);
+    transform: rotate(180deg);
+    background:transparent;
+    color: #fff;
+    border: none;
+    // animation: arrow 6s ease infinite;
+    transition: .5s;
+    border-radius: 50%;
+    margin-top: 10px;
+
+    &:hover{
+        transform: rotate(180deg) translateY(10px);
+        // transform: translateY(calc(-50%-10px)) rotate(180deg);
+    }
+}

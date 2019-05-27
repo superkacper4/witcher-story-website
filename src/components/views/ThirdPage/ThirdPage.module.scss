@@ -1,0 +1,60 @@
+.wrapper{
+    height: 100vh;
+    background: url("./img/kaermorhen.jpg") no-repeat center center fixed;
+    // background: url("./img/kaermorhen.gif") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to bottom, rgb(2, 92, 145), rgb(63, 66, 73), rgb(63, 66, 73));
+        opacity: .6;
+    }
+
+    .header{
+        opacity:0;
+        transition: 1s;
+    }
+
+
+    h2{
+        font-size: 3.5rem;
+        position: relative;
+        // top:30%;
+        // left: 50%;
+        // transform: translateX(-50%);
+
+        text-align: center;
+    }
+
+    .text{
+        margin-top: 50px;
+        position: relative;
+        // top:50%;
+        // left: 50%;
+        // transform: translateX(-50%);
+        width: 600px;
+        text-align: justify;
+        font-size: 1.75rem;
+        font-style: italic;
+    }
+}
+
+.active{
+    @extend .wrapper;
+
+    .header{
+        @extend .header;
+        opacity: 1;
+    }
+}

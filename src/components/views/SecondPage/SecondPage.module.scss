@@ -1,0 +1,57 @@
+.wrapper{
+    height: 100vh;
+    // background: url("./img/witcher.jpg") no-repeat center center;
+    // background: url("./img/witcher1.gif") no-repeat center center;
+    // background: url("./img/witcher2.gif") no-repeat center center;
+    background: url("./img/witcher.gif") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(63, 66, 73);
+        // background-image: linear-gradient(to top, rgb(185, 99, 0), rgb(63, 66, 73), rgb(63, 66, 73));
+        opacity: .75;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        position: absolute;
+        top:10%;
+        left: 10%;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .text{
+        position: absolute;
+        top:30%;
+        right: 5%;
+        font-size: 1.75rem;
+        width: 40%;
+        font-style: italic;
+        text-align: justify;
+        opacity: 0;
+        transition: 1s;
+    }
+}
+
+.active{
+    @extend .wrapper;
+
+    h2{
+        @extend h2;
+        opacity: 1;
+    }
+
+    .text{
+        @extend .text;
+        opacity: 1;
+    }
+}

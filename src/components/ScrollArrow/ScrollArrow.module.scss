@@ -1,0 +1,60 @@
+.arrow{
+    position: absolute;
+    z-index: 2;
+    height: 70px;
+    width: 70px;
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:transparent;
+    color: #fff;
+    border: none;
+    // animation: arrow 6s ease infinite;
+    transition: .5s;
+    border-radius: 50%;
+
+    &:hover{
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+.arrowReverse{
+    position: absolute;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    background:transparent;
+    color: #fff;
+    border: none;
+    // animation: arrow 6s ease infinite;
+    transition: .5s;
+    border-radius: 50%;
+
+    &:hover{
+        transform: translateX(-50%) translateY(-10px) rotate(180deg);
+    }
+}
+
+
+@keyframes arrow{
+    0%{
+        transform: translateX(-50%) translateY(0);
+    }
+
+    25%{
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    50%{
+        transform: translateX(-50%) translateY(0);
+    }
+}
